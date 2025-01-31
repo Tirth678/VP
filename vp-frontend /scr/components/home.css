@@ -1,0 +1,178 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    background-color: #121826; /* Dark Navy */
+    color: #d6d6d6; /* Light Gray */
+}
+
+/* Header (Navigation Bar) */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #1a2332; /* Darker Blue */
+    color: white;
+    border-bottom: 2px solid #e58e26; /* Accent Border */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e58e26; /* Orange Accent */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    position: relative;
+}
+
+/* Neon Hover Effect for Links */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background: #00f2ff; /* Neon Cyan */
+    transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: #00f2ff; /* Neon Cyan */
+    text-shadow: 0 0 8px #00f2ff;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://source.unsplash.com/1600x800/?finance,technology') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #d6d6d6;
+}
+
+/* Neon Glow Button */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #e58e26; /* Electric Orange */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px rgba(229, 142, 38, 0.5);
+}
+
+.btn:hover {
+    background: #ff9f43;
+    box-shadow: 0px 0px 15px #ff9f43, 0px 0px 20px #ff9f43;
+    transform: scale(1.05);
+}
+
+/* Services Section */
+#services, #about, #contact {
+    text-align: center;
+    padding: 50px;
+}
+
+#services h2, #about h2, #contact h2 {
+    color: #ffffff;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Service Cards */
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service {
+    background: #1a2332; /* Darker Card Background */
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+    border-radius: 8px;
+    position: relative;
+}
+
+/* Neon Glow Effect on Hover */
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px #00f2ff, 0px 0px 30px #00f2ff;
+}
+
+.service h3 {
+    color: #e58e26;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    color: #d6d6d6;
+}
+
+/* About & Contact Sections */
+#about p, #contact p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Footer */
+footer {
+    background: #1a2332;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Neon Footer Hover Effect */
+footer:hover {
+    text-shadow: 0px 0px 15px #00f2ff, 0px 0px 20px #00f2ff;
+}

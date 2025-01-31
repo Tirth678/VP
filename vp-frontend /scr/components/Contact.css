@@ -1,0 +1,16 @@
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: white;
+  }
+  
+  #contact h2 {
+    font-size: 28px;
+    color: #1a2332;
+  }
+  
+  #contact p {
+    font-size: 18px;
+    color: #555;
+  }
+  
